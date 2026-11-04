@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise 💗</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .layar {
+            display: none;
+        }
+
+        .layar.aktif {
+            display: block;
+        }
+
+        .kontrol-musik {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HALAMAN PASSWORD -->
+    <section id="halamanPassword" class="layar aktif">
+        <div class="flower">🌸💗🌸</div>
+        <h1>Birthday Surprise!</h1>
+        <p>Masukkan angka usia kamu untuk membuka kejutan 🎁</p>
+
+        <input
+            type="number"
+            id="password"
+            placeholder="Masukkan angka..."
+        >
+
+        <button onclick="cekPassword()">OKE 💗</button>
+        <p id="pesan"></p>
+      <!-- Dekorasi party dan confetti -->
+<div class="party-decor" aria-hidden="true">
+
+    <div class="party-left">🎉</div>
+    <div class="party-right">🎉</div>
+
+    <div class="confetti confetti-left">
+        <span>🎊</span>
+        <span>✨</span>
+        <span>💗</span>
+        <span>🎀</span>
+        <span>✨</span>
+    </div>
+
+    <div class="confetti confetti-right">
+        <span>🎊</span>
+        <span>💗</span>
+        <span>✨</span>
+        <span>🎀</span>
+        <span>🎊</span>
+    </div>
+
+</div>
+    </section>
+
+
+    <!-- HALAMAN HBD -->
+    <section id="halamanHBD" class="layar">
+        <div class="flower">🌸 🌷 🌸</div>
+
+        <h1>HAPPY BIRTHDAY!</h1>
+        <h2>To "Lely Khusnul Khotimah" </h2>
+
+        <div style="font-size:75px;">🎂</div>
+
+        <h2>Selamat Ulang Tahun ke-16! 🎊</h2>
+
+        <p>
+            Semoga kebahagiaan selalu menyertaimu.
+        </p>
+
+        <div style="font-size:45px;">🎉🎊🎉</div>
+
+        <button onclick="bukaKado()">Buka Kado 🎁</button>
+    </section>
+
+
+    <!-- HALAMAN UTAMA / SURAT -->
+    <section id="halamanUtama" class="layar">
+
+        <div class="flower">🌸 🌷 🌸</div>
+
+        <h1>Happy Birthday!</h1>
+        <h2>To "Lely Khusnul Khotimah" </h2>
+
+        <p class="intro">
+            Yaa princes e tambah tua, tambah mikir wkwk
+            aja klalen kae ne "HIHUU" hhha
+        </p>
+
+        <button onclick="bukaSurprise()">
+            Buka Kejutan 🎁
+        </button>
+
+        <div id="surprise" class="hidden">
+            <h2>Selamat Ulang Tahun! 🎂</h2>
+            <p>
+                Semoga menjadi anak yang sholehah, rajin beribadah,
+                berbakti kepada orangtua, panjang umurnya, selalu bahagia,
+                selalu dipertemukan dengan hal-hal baik, dilancarkan rezekinya,
+                tercapai semua cita-citanya, sukses dunia akhirat, serta menjadi wanita
+                yang rendah hati, wanita yg beautiful, pemaaf dan wanita yang selalu baik.
+            </p>
+        </div>
+
+        <h2>Special Music 🎵</h2>
+
+        <div class="kontrol-musik">
+            <button onclick="putarMusik()">▶ Putar Musik</button>
+            <button onclick="jedaMusik()">⏸ Jeda Musik</button>
+        </div>
+
+        <h2>Surat Kecil 💌</h2>
+
+        <div class="letter">
+            Terima kasih sudah menjadi teman
+            yang baik. Semoga semua cita-cita
+            dan harapanmu bisa tercapai amin.
+            Maafkan sya jika perilaku dan perbuatanku
+            membuatmu tidak nyaman, risih, dan Maafkan sya
+            jika ada hal-hal yang membuatmu kecewa.
+            Maaf jika aku banyak kurang nya banyak salahnya.
+            Hbd just friend.
+            Jangan lupa bahagia selalu!
+            ~weengzz~
+        </div>
+
+        <footer>
+            Made with 💗 for your special day
+            #JUSTFRIEND#WHOOPS#
+        </footer>
+
+    </section>
+
+    <!-- SATU PEMUTAR MUSIK UNTUK SEMUA TAMPILAN -->
+    <audio id="music" src="musik/lagu.mp3" loop></audio>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
